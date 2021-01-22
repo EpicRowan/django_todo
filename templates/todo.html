@@ -3,8 +3,9 @@
 
 	<h1> todo template </h1>
 		<ul>
-			<li> item A </li>
-			<li> item b </li>
+			{% for item in all_items %}
+			<li> {{item.content}} </li>
+			{% endfor %}
 		</ul>
 
 </html>
